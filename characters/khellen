@@ -1,0 +1,19 @@
+khellen
+Character(save="khellen",name="Khellen Fell",ardent=2,sorcerer=5)
+setatt(str=10,dex=15,con=12,int=19,wis=11,cha=17)
+setskill(autohypnosis=0,spellcraft=8,diplomacy=10,perform=6,heal=6,profession=0,craft=7,knowledge_all=0,bluff=0,concentration=7,knowledge_arcana=4)
+stats.hp=40
+update()
+
+equipment
+body=null:items:null:[]:
+eyes=null:items:null:[]:
+offhand=null:items:null:[]:
+cloak=null:items:null:[]:
+boots=null:items:null:[]:
+hand=masterwork quarterstaff:weapons:quarterstaff:['mw']:
+gloves=null:items:null:[]:
+head=null:items:null:[]:
+
+inventory
+wallet:items:wallet:[]:1700.19

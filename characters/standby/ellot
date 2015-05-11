@@ -1,0 +1,19 @@
+ellot
+Character(save="ellot",name="Ellot Adonis",shaper=8)
+setatt(str=12,dex=17,con=14,int=17,wis=16,cha=14)
+setskill(use_psionic_device=10,profession=15,disguise=10,craft=15,knowledge_all=15,bluff=10,concentration=10,psicraft=15)
+stats.hp=38
+update()
+
+equipment
+body=null:items:null:[]:
+eyes=null:items:null:[]:
+offhand=null:items:null:[]:
+cloak=null:items:null:[]:
+boots=null:items:null:[]:
+hand=null:items:null:[]:
+gloves=null:items:null:[]:
+head=null:items:null:[]:
+
+inventory
+wallet:items:wallet:[]:0.0

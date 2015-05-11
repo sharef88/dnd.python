@@ -1,0 +1,19 @@
+toru
+Character(save="toru",name="Toru Kuma",shugenja=7)
+setatt(str=8,dex=10,con=12,int=12,wis=13,cha=16)
+setskill(concentration=10,heal=10,move_silently=10,spellcraft=10,diplomacy=10)
+stats.hp=30
+update()
+
+equipment
+body=null:items:null:[]:
+eyes=null:items:null:[]:
+offhand=null:items:null:[]:
+cloak=null:items:null:[]:
+boots=null:items:null:[]:
+hand=null:items:null:[]:
+gloves=null:items:null:[]:
+head=null:items:null:[]:
+
+inventory
+wallet:items:wallet:[]:500

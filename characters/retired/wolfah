@@ -1,0 +1,38 @@
+wolfah
+Character(save="wolfah",name="Alkaide Ashikage",lurk=7)
+setatt(str=15,dex=16,con=13,int=16,wis=13,cha=15)
+setskill(escape_artist=16,swim=8,use_psionic_device=8,autohypnosis=4,sleight_of_hand=16,tumble=16,profession=4,knowledge_psionics=8,spot=4,jump=8,disguise=8,craft=8,move_silently=16,bluff=8,hide=16,climb=8,concentration=4,psicraft=8,listen=4)
+stats.hp=43
+update()
+
+equipment
+body=magic leather armor +1:armor:leather armor:['mw', 'magic']:1
+eyes=null:items:null:[]:
+offhand=null:items:null:[]:
+cloak=null:items:null:[]:
+boots=null:items:null:[]:
+hand=masterwork dagger:weapons:dagger:['mw']:
+gloves=null:items:null:[]:
+head=null:items:null:[]:
+
+inventory
+wallet:items:wallet:[]:9860
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:
+masterwork dagger:weapons:dagger:['mw']:

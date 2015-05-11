@@ -1,0 +1,30 @@
+koto
+Character(save="koto",name="Koto Harada",fighter=8)
+setatt(str=17,dex=12,con=14,int=12,wis=10,cha=12)
+setskill()
+stats.hp=68
+update()
+
+equipment
+body=masterwork breastplate:armor:breastplate:['mw']:
+eyes=null:items:null:[]:
+offhand=null:items:null:[]:
+cloak=null:items:null:[]:
+boots=null:items:null:[]:
+hand=frost nodachi:weapons:greatsword:['mw', 'magic', ('throwing', 'base'), ('returning', 'base'), ('frost', 'base')]:1
+gloves=null:items:null:[]:
+head=null:items:null:[]:
+
+inventory
+wallet:items:wallet:[]:10
+masterwork wakizashi:weapons:wakizashi:['mw']:
+
+start container=backpack:items:backpack:[]:
+bedroll:items:bedroll:[]:
+waterskin:items:waterskin:[]:
+sack:items:sack:[]:
+flint and steel:items:flint and steel:[]:
+50 ft silk rope:items:50 ft silk rope:[]:
+sunrod:items:sunrod:[]:
+sunrod:items:sunrod:[]:
+end container

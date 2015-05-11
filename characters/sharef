@@ -1,0 +1,30 @@
+sharef
+Character(save="sharef",name="Sharef Adonis",soulknife=6)
+setatt(str=17,dex=15,con=14,int=13,wis=14,cha=12)
+setskill(hide=48,tumble=48,profession=48,knowledge_psionics=17,spot=48,jump=72,craft=24,move_silently=48,autohypnosis=48,climb=72,concentration=48,listen=48)
+stats.hp=59
+update()
+
+equipment
+body=masterwork leather armor:armor:leather armor:['mw']:
+eyes=null:items:null:[]:
+offhand=masterwork buckler:armor:buckler:['mw']:
+cloak=null:items:null:[]:
+boots=null:items:null:[]:
+hand=magic dagger +2:weapons:dagger:['mw', 'magic']:2
+gloves=null:items:null:[]:
+head=null:items:null:[]:
+
+inventory
+wallet:items:wallet:[]:80.0
+
+start container=backpack:items:backpack:[]:
+bedroll:items:bedroll:[]:
+waterskin:items:waterskin:[]:
+sack:items:sack:[]:
+flint and steel:items:flint and steel:[]:
+50 ft silk rope:items:50 ft silk rope:[]:
+sunrod:items:sunrod:[]:
+sunrod:items:sunrod:[]:
+dagger of elemental doom:weapons:dagger:['mw', 'magic', ('thundering', 'base'), ('frost', 'base'), ('flaming', 'base'), ('shock', 'burst')]:5
+end container

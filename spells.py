@@ -1,0 +1,70 @@
+from decimal import Decimal
+from dnd_db import db
+class spell(object):
+	def __init__(self, **kwargs):
+		for x in kwargs:
+			self.__dict__[x] = kwargs[x]
+
+spells = db(
+	A = db(
+		acid_fog = spell(school="conjuration(creation)[acid]", name="acid fog", casting_time="1s", resist="no", range="m", components="v,s,m/df", duration="1r/lvl", save="none", target="none", area="none"),
+		acid_splash = spell(school="conjuration(creation)[acid]", name="acid splash", casting_time="1s", resist="no", range="c", components="v,s", duration="instant", save="none", target="none", area="none"),
+		aid = spell(school="enchantment(compulsion)[mind-affectiong]", name="aid", casting_time="1s", resist="yes", range="living creature", components="v,s,df", duration="1m/lvl", save="none", target="touched", area="none"),
+		air_walk = spell(school="transmutation[air]", name="air walk", casting_time="1s", resist="yes", range="t", components="v,s,df", duration="10m/lvl", save="none", target="creature", area="none"),
+		alarm = spell(school="abjuration", name="alarm", area="20ft emanation", casting_time="1s", resist="no", range="c", components="v,s,f/df", duration="2hr/lvl", save="none", target="none"),
+		align_weapon = spell(school="transmutation[txt]", name="align weapon", area="none", casting_time="1s", resist="yes", range="t", components="v,s,df", duration="1m/lvl", save="will negate", target="weapon or 50 projectiles"),
+		alter_self = spell(school="transmutation", name="alter self", area="none", casting_time="1s", resist="no", range="personal", components="v,s", duration="10min/lvl", save="none", target="you"),
+		analyze_dweomer = spell(school="divination", name="analyze dweomer", area="none", casting_time="1s", resist="no", range="c", components="v,s,f", duration="1r/lvl", save="will", target="1 per lvl"),
+		animal_growth = spell(school="transmutation", name="animal growth", area="none", casting_time="1s", resist="yes", range="m", components="v,s", duration="1min/lvl", save="fort negates", target="1 animal per 2 lvl"),
+		animal_messenger = spell(school="enchantment(compulsion)[mind-affecting]", name="animal messenger", area="none", casting_time="1s", resist="yes", range="c", components="v,s,m", duration="1d/lvl", save="none", target="1 tiny animal"),
+		animal_shapes = spell(school="transmutation", name="animal shapes", area="none", casting_time="1s", resist="yes", range="c", components="v,s,df", duration="1hr/lvl", save="none", target="1 willing per level"),
+		animal_trance = spell(school="enchantment(compulsion)[mind-affecting,sonic]", name="animal trance", area="none", casting_time="1s", resist="yes", range="c", components="v,s", duration="concentration", save="will", target="animal or magical beast with int < 3"),
+		animate_dead = spell(school="necromancy[evil]", name="animate dead", area="none", casting_time="is", resist="no", range="t", components="v,s,m", duration="instant", save="none", target="corpse touched"),
+		animate_objects = spell(school="transmutation", name="animate objects", area="none", casting_time="1s", resist="no", range="m", components="v,s", duration="1r/lvl", save="none", target="1 small object per caster level"),
+		animate_plants = spell(school="transmutation", name="animate plants", area="none", casting_time="1s", resist="no", range="c", components="v", duration="1r/lvl", save="none", target="1 large plant per 3 caster level"),
+		animate_rope = spell(school="transmutation", name="animate rope", area="none", casting_time="1s", resist="no", range="m", components="v,s", duration="1r/lvl", save="none", target="1 rope"),
+		antilife_shell = spell(school="abjuration", name="antilife shell", area="10ft emanation", casting_time="1r", resist="yes", range="10ft", components="v,s,df", duration="10m/lvl", save="none", target="you"),
+		antimagic_field = spell(school="abjuration", name="antimagic field", area="10ft emanation", casting_time="1s", resist="no", range="10ft", components="v,s,m/df", duration="10m/lvl", save="none", target="you"),
+		antipathy = spell(school="enchantment(compulsion)[mind-affecting]", name="antipathy", area="10ft**3", casting_time="1h", resist="yes", range="c", components="v,s,m/df", duration="2hr/lvl", save="will partial", target="location or object"),
+		antiplant_shell = spell(school="abjuration", name="antiplant shell", area="10ft emanation", casting_time="1s", resist="yes", range="10ft", components="v,s,df", duration="10m/lvl", save="none", target="you"),
+		arcane_eye = spell(school="divination(scrying)", name="arcane eye", area="none", casting_time="10m", resist="no", range="unlimited", components="v,s,m", duration="1m/level", save="none", target="none"),
+		arcane_lock = spell(school="abjuration", name="arcane lock", area="30ft**2", casting_time="1s", resist="no", range="t", components="v,s,m", duration="permanent", save="none", target="door, chest or portal touched"),
+		arcane_mark = spell(school="universal", name="arcane mark", area="none", casting_time="1s", resist="no", range="0", components="v,s", duration="permanent", save="none", target="none"),
+		arcane_sight = spell(school="divination", name="arcane sight", area="none", casting_time="1s", resist="no", range="personal", components="v,s", duration="1m/lvl", save="none", target="you"),
+		greater_arcane_sight = spell(school="divination", name="greater arcane sight", area="none", casting_time="1s", resist="no", range="personal", components="v,s", duration="1m/lvl", save="none", target="you"),
+		astral_projection = spell(school="necromancy", name="astral projection", area="none", casting_time="30m", resist="yes", range="t", components="v,s,m", duration="none", save="none", target="you and 1 willing per 2 caster level"),
+		atonement = spell(school="abjuration", name="atonement", area="none", casting_time="1h", resist="yes", range="t", components="v,s,m,f,df,xp", duration="instant", save="none", target="living creature touched"),
+		augury = spell(school="divination", name="augury", area="none", casting_time="1m", resist="no", range="personal", components="v,s,m,f", duration="instant", save="none", target="you"),
+		awaken = spell(school="transmutation", name="awaken", area="none", casting_time="24hr", resist="yes", range="touch", components="v,s,df,xp", duration="instant", save="will negates", target="animal or tree touched"),
+		),
+	B = db(
+		baleful_polymorph = spell(school="transmutation", name="baleful polymorph", area="none", casting_time="1s", resist="yes", range="c", components="v,s", duration="permanent", save="fort negates, will partial", target="one creature"),
+		bane = spell(school="enchantment(compulsion)[fear, mind-affecting]", name="bane", area="all enemies withing 50ft", casting_time="1s", resist="yes", range="50ft", components="v,s,df", duration="1m/lvl", save="will negates", target="none"),
+		banishment = spell(school="abjuration", name="banishment", area="none", casting_time="1s", resist="yes", range="c", components="v,s,f", duration="instant", save="will negates", target="one or more extraplanar creature"),
+		barkskin = spell(school="transmutation", name="barkskin", area="none", casting_time="1s", resist="yes", range="touch", components="v,s,df", duration="10m/lvl", save="none", target="living creature touched"),
+		bears_endurance = spell(school="transmutation", name="bears endurance", area="none", casting_time="1s", resist="yes", range="t", components="v,s,df", duration="1m/lvl", save="will negates", target="creature touched"),
+		mass_bears_endurance = spell(school="transmutation", name="mass bears endurance", area="none", casting_time="1s", resist="yes", range="c", components="v,s,df", duration="1m/lvl", save="will negates", target="one creature per level"),
+		bestow_curse = spell(school="necromancy", name="bestow curse", area="none", casting_time="1s", resist="yes", range="t", components="v,s", duration="permanent", save="will negates", target="creature touched"),
+		bigbys_clenched_fist = spell(school="evocation[force]", name="bigbys clenched fist", area="none", casting_time="1s", resist="yes", range="m", components="v,s,f", duration="1r/lvl", save="none", target="none"),
+		bigbys_crushing_hand = spell(school="evocation[force]", name="bigbys crushing hand", area="none", casting_time="1s", resist="yes", range="m", components="v,s,m,f/df", duration="1r/lvl", save="none", target="none"),
+		bigbys_forceful_hand = spell(school="evocation[force]", name="bigbys forceful hand", area="none", casting_time="1s", resist="yes", range="m", components="v,s,f", duration="1r/lvl", save="none", target="none"),
+		bigbys_grasping_hand = spell(school="evocation[force]", name="bigbys grasping hand", area="none", casting_time="1s", resist="yes", range="m", components="v,s,f/df", duration="1r/lvl", save="none", target="none"),
+		bigbys_interposing_hand = spell(school="evocation[force]", name="bigbys interposing hand", area="no", casting_time="1s", resist="no", range="m", components="v,s,f", duration="1r/lvl", save="none", target="none"),
+		binding = spell(school="enchantment(compulsion)[mind-affecting]", name="binding", area="none", casting_time="1m", resist="yes", range="c", components="v,s,m", duration="text", save="will negates", target="one living"),
+		blade_barrier = spell(school="evocation[force]", name="blade barrier", area="none", casting_time="1s", resist="yes", range="m", components="v,s", duration="1m/lvl", save="reflex half or reflex negates", target="none"),
+		blasphemy = spell(school="evocation[evil,sonic]", name="blasphemy", area="40ft emanation", casting_time="1s", resist="yes", range="40ft", components="v", duration="instant", save="none or will negates", target="non evil creature"),
+		bless = spell(school="enchantment(compusion)[mind-affecting]", name="bless", area="50ft burst", casting_time="1s", resist="yes", range="50ft", components="v,s,df", duration="1m/lvl", save="none", target="allies"),
+		bless_water = spell(school="transmutation[good]", name="bless water", area="none", casting_time="1m", resist="yes", range="touch", components="v,s,m", duration="instant", save="will negates", target="flask of water touched"),
+		bless_weapon = spell(school="transmutation", name="bless weapon", area="none", casting_time="1s", resist="no", range="t", components="v,s", duration="1m/lvl", save="none", target="weapon touched"),
+		blight = spell(school="necromancy", name="blight", area="none", casting_time="1s", resist="yes", range="t", components="v,s,df", duration="instant", save="fort half", target="one plant or plant creature"),
+		blindness_deafness = spell(school="necromancy", name="blindness deafness", area="none", casting_time="1s", resist="yes", range="m", components="v", duration="permanent", save="fort negates", target="one living creature"),
+		blink = spell(school="transmutation", name="blink", area="none", casting_time="1s", resist="no", range="personal", components="v,s", duration="1r/lvl", save="none", target="you"),
+		blur = spell(school="illusion(glamer)", name="blur", area="none", casting_time="1s", resist="yes", range="t", components="v", duration="1m/lvl", save="will negates", target="creature touched"),
+		break_enchantment = spell(school="abjuration", name="break enchantment", area="none", casting_time="1m", resist="no", range="c", components="v,s", duration="instant", save="text", target="one creater per lvl"),
+		bulls_strength = spell(school="transmutation", name="bulls strength", area="none", casting_time="1s", resist="yes", range="t", components="v,s,m/df", duration="1m/lvl", save="will negates", target="creature touched"),
+		mass_bulls_strength = spell(school="transmutation", name="mass bulls strength", area="none", casting_time="1s", resist="yes", range="c", components="v,s,m/df", duration="1m/lvl", save="will negates", target="one creature per level"),
+		burning_hands = spell(school="evocation[fire]", name="burning hands", area="cone burst", casting_time="1s", resist="yes", range="15ft", components="v,s", duration="instant", save="reflex half", target="none"),
+		),
+	call_lightning = spell(school="evocation[electricty]", name="call lightning", area="none", casting_time="1r", resist="yes", range="m", components="v,s", duration="1m/lvl", save="reflex half", target="none")
+
+	)

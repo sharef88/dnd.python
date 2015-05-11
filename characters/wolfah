@@ -1,0 +1,4 @@
+wolfah
+Character(save="wolfah",name="Alkaide Ashikage",lurk=8)
+setatt(dex=18,cha=14,int=15,wis=13,str=15,con=12)
+setskill(escape_artist=0,swim=0,use_psionic_device=0,autohypnosis=0,sleight_of_hand=0,tumble=0,profession=0,knowledge_psionics=0,spot=0,jump=0,disguise=0,craft=0,move_silently=0,bluff=0,hide=0,climb=0,concentration=0,psicraft=0,listen=0)
